@@ -1,0 +1,27 @@
+2025-02-28 13:42:02.578 | INFO     | src.datasets.Dataset:split_trainval:226 - Splitting trainval into 100% train and 0% val
+2025-02-28 13:42:03.357 | INFO     | src.datasets.Dataset:save_split:273 - Saved split to D:\LinearCamera\std_datasets\VisA\split.json
+2025-02-28 13:42:03.362 | INFO     | src.datasets.Dataset:__init__:132 - Saving preprocessed few-shot data to D:\LinearCamera\std_datasets\VisA\split_fewshot\shot_256-seed_-1.pkl
+2025-02-28 13:42:03.368 | INFO     | src.helper:build_model:20 - Loading model ViT-L-14-336
+2025-02-28 13:42:03.368 | INFO     | src.helper:build_model:23 - Building CustomCLIP
+2025-02-28 13:42:03.368 | INFO     | src.helper:build_model:29 - Now load openai model
+2025-02-28 13:42:08.402 | INFO     | src.open_clip.model_revise:_build_vision_tower:169 - CLIPPromptCfg(vision_prompt_length=[16], vision_prompt_layer_idx=[20], text_prompt_length=None, text_prompt_layer_idx=None, group_layer_idx=[10, 14, 18, 22], feature_layer=[7, 11, 15, 23], pseudo_layer=None, mid_loss=True)
+2025-02-28 13:42:45.911 | SUCCESS  | src.helper:load_checkpoint:96 - loaded checkpoint from ./weights/train-mvtec-model-latest.pth.tar
+2025-02-28 13:42:45.937 | INFO     | src.helper:load_checkpoint:102 - loaded pretrained encoder from epoch 17 with msg: _IncompatibleKeys(missing_keys=['seg_decoder.positional_embedding'], unexpected_keys=[])
+2025-02-28 13:42:45.937 | INFO     | src.helper:load_checkpoint:108 - loaded optimizers from epoch 17
+2025-02-28 13:42:45.938 | INFO     | src.helper:load_checkpoint:109 - read-path: ./weights/train-mvtec-model-latest.pth.tar
+2025-02-28 13:44:47.141 | INFO     | src.utils.metrics:evaluate:207 - 
+objects       i_auroc    i_aupr    p_auroc
+----------  ---------  --------  ---------
+candle        95.55     96.2654    98.8307
+capsules      89.2833   94.2551    94.3902
+cashew        90.12     95.4884    92.0774
+chewinggum    98.84     99.4868    99.5813
+fryum         94.52     97.348     93.6596
+macaroni1     80.38     82.2947    96.1559
+macaroni2     59.19     58.3444    96.7231
+pcb1          90.53     91.2687    91.4347
+pcb2          71.94     73.4674    91.36
+pcb3          65.3465   68.7612    89.9407
+pcb4          91.4356   91.7002    94.7342
+pipe_fryum    99.08     99.6129    94.0943
+mean          85.518    87.3578    94.4152

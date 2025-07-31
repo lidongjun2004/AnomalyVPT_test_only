@@ -1,0 +1,10 @@
+2025-02-27 15:29:08.538 | INFO     | src.datasets.Dataset:read_split:290 - Reading split from D:\LinearCamera\std_datasets\mvtec_ad\split.json
+2025-02-27 15:29:08.844 | INFO     | src.datasets.Dataset:__init__:124 - Loading preprocessed few-shot data from D:\LinearCamera\std_datasets\mvtec_ad\split_fewshot\shot_256-seed_-1.pkl
+2025-02-27 15:29:08.862 | INFO     | src.helper:build_model:20 - Loading model ViT-L-14-336
+2025-02-27 15:29:08.862 | INFO     | src.helper:build_model:23 - Building CustomCLIP
+2025-02-27 15:29:08.863 | INFO     | src.helper:build_model:29 - Now load openai model
+2025-02-27 15:29:13.353 | INFO     | src.open_clip.model_revise:_build_vision_tower:169 - CLIPPromptCfg(vision_prompt_length=[16], vision_prompt_layer_idx=[20], text_prompt_length=None, text_prompt_layer_idx=None, group_layer_idx=[10, 14, 18, 22], feature_layer=[7, 11, 15, 23], pseudo_layer=None, mid_loss=True)
+2025-02-27 15:29:39.131 | SUCCESS  | src.helper:load_checkpoint:96 - loaded checkpoint from D:/LinearCamera/AnomalyVPT/weights/train-visa-model-latest.pth.tar
+2025-02-27 15:29:39.158 | INFO     | src.helper:load_checkpoint:102 - loaded pretrained encoder from epoch 29 with msg: <All keys matched successfully>
+2025-02-27 15:29:39.158 | INFO     | src.helper:load_checkpoint:108 - loaded optimizers from epoch 29
+2025-02-27 15:29:39.158 | INFO     | src.helper:load_checkpoint:109 - read-path: D:/LinearCamera/AnomalyVPT/weights/train-visa-model-latest.pth.tar

@@ -1,0 +1,29 @@
+2025-02-27 15:30:29.238 | INFO     | src.datasets.Dataset:read_split:290 - Reading split from D:\LinearCamera\std_datasets\mvtec_ad\split.json
+2025-02-27 15:30:29.384 | INFO     | src.datasets.Dataset:__init__:124 - Loading preprocessed few-shot data from D:\LinearCamera\std_datasets\mvtec_ad\split_fewshot\shot_256-seed_-1.pkl
+2025-02-27 15:30:29.388 | INFO     | src.helper:build_model:20 - Loading model ViT-L-14-336
+2025-02-27 15:30:29.388 | INFO     | src.helper:build_model:23 - Building CustomCLIP
+2025-02-27 15:30:29.388 | INFO     | src.helper:build_model:29 - Now load openai model
+2025-02-27 15:30:34.006 | INFO     | src.open_clip.model_revise:_build_vision_tower:169 - CLIPPromptCfg(vision_prompt_length=[16], vision_prompt_layer_idx=[20], text_prompt_length=None, text_prompt_layer_idx=None, group_layer_idx=[10, 14, 18, 22], feature_layer=[7, 11, 15, 23], pseudo_layer=None, mid_loss=True)
+2025-02-27 15:31:01.099 | SUCCESS  | src.helper:load_checkpoint:96 - loaded checkpoint from D:/LinearCamera/AnomalyVPT/weights/train-visa-model-latest.pth.tar
+2025-02-27 15:31:01.143 | INFO     | src.helper:load_checkpoint:102 - loaded pretrained encoder from epoch 29 with msg: <All keys matched successfully>
+2025-02-27 15:31:01.143 | INFO     | src.helper:load_checkpoint:108 - loaded optimizers from epoch 29
+2025-02-27 15:31:01.143 | INFO     | src.helper:load_checkpoint:109 - read-path: D:/LinearCamera/AnomalyVPT/weights/train-visa-model-latest.pth.tar
+2025-02-27 15:33:13.232 | INFO     | src.utils.metrics:evaluate:207 - 
+objects       i_auroc    i_aupr    p_auroc
+----------  ---------  --------  ---------
+bottle        89.6032   96.8756    88.1503
+cable         89.9738   94.2072    78.0561
+capsule       93.219    98.5801    93.6043
+carpet        99.9599   99.9875    98.7734
+grid          98.4127   99.4091    94.5346
+hazelnut      90.7857   94.6538    94.7595
+leather       99.6943   99.8924    98.376
+metal_nut     95.9922   99.0883    66.4653
+pill          82.9787   96.5253    84.013
+screw         84.4435   94.3381    97.0923
+tile          99.1703   99.6853    90.919
+toothbrush    87.2222   95.3971    90.9598
+transistor    83.4583   82.7844    63.334
+wood          96.6667   98.9512    93.3171
+zipper        85.4254   95.9994    91.3709
+mean          91.8004   96.425     88.2484

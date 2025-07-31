@@ -1,0 +1,26 @@
+2025-07-03 10:27:12.706 | INFO     | src.datasets.Dataset:read_split:290 - Reading split from /data/users/ldj/dataset/mvtec_ad/split.json
+2025-07-03 10:27:12.724 | INFO     | src.datasets.Dataset:__init__:124 - Loading preprocessed few-shot data from /data/users/ldj/dataset/mvtec_ad/split_fewshot/shot_256-seed_-1.pkl
+2025-07-03 10:27:12.726 | INFO     | src.helper:build_model:20 - Loading model ViT-L-14-336
+2025-07-03 10:27:12.726 | INFO     | src.helper:build_model:23 - Building CustomCLIP
+2025-07-03 10:27:12.726 | INFO     | src.helper:build_model:29 - Now load openai model
+2025-07-03 10:27:58.383 | INFO     | src.open_clip.model_revise:_build_vision_tower:169 - CLIPPromptCfg(vision_prompt_length=[16], vision_prompt_layer_idx=[20], text_prompt_length=None, text_prompt_layer_idx=None, group_layer_idx=[10, 14, 18, 22], feature_layer=[7, 11, 15, 23], pseudo_layer=None, mid_loss=True)
+2025-07-03 10:28:13.029 | INFO     | src.helper:load_checkpoint:113 - Encountered exception when loading checkpoint [Errno 2] No such file or directory: './weights/train-visa-model-latest.pth.tar'
+2025-07-03 10:28:46.451 | INFO     | src.utils.metrics:evaluate:207 - 
+objects       i_auroc    i_aupr    p_auroc
+----------  ---------  --------  ---------
+bottle        87.4603   96.4653    61.3385
+cable         85.4948   89.6976    54.8591
+capsule       75.9872   94.374     87.8279
+carpet        99.358    99.7899    68.5737
+grid          89.2231   95.5458    72.0878
+hazelnut      85.5      93.0796    65.6177
+leather       99.9321   99.9765    81.4264
+metal_nut     75.7087   94.7033    71.2116
+pill          83.497    96.3747    72.1259
+screw         85.7553   93.7507    90.2856
+tile          95.6349   98.4611    58.4788
+toothbrush    73.0556   88.37      74.3372
+transistor    84.2083   78.2917    57.4316
+wood          97.5439   99.2897    74.3236
+zipper        78.02     93.6407    80.5063
+mean          86.4253   94.1207    71.3621

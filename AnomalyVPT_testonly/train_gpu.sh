@@ -5,7 +5,7 @@ dataset="mvtec"
 suffix="-2_seg_cls_1024_output_dim_gs05"
 
 # 定义配置名称
-config_name="vitl14_ep20"  # "vitl14_ep20", "eva02_l14_336"
+config_name="vit-B-16"  # "vitl14_ep20", "eva02_l14_336"
 
 # 定义输出目录
 output_dir="./output/train_vpt_${dataset}_${suffix}_3/"
